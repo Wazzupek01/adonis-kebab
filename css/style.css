@@ -14,7 +14,7 @@ body {
 }
 
 .jumbotron {
-    background: url("/img/baner.png") no-repeat;
+    background: url("../img/baner.png") no-repeat;
     background-size: 100vw;
     color: #DDD;
     text-align: center;
