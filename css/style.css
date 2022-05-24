@@ -1,0 +1,76 @@
+
+footer {
+    min-height: 100px;
+    padding: 20px 10px;
+    color: #FFF;
+    text-align: center;
+}
+body {
+    overflow-x: hidden;
+}
+
+.brand-name {
+    font-family: "Times New Roman", serif;
+}
+
+.jumbotron {
+    background: url("/img/baner.png") no-repeat;
+    background-size: 100vw;
+    color: #DDD;
+    text-align: center;
+}
+
+.jumbotron-smaller {
+    height: auto;
+}
+
+.card {
+    text-align: center;
+}
+
+#o-nas {
+    visibility: hidden;
+}
+
+#footer-icons {
+    float: right;
+}
+
+#logo-small {
+    width: 1em;
+    height: 1em;
+}
+
+
+.brand-name-big {
+    font-size: 15vw;
+    text-shadow: 2px 2px 15px #000;
+}
+
+.nav-link {
+    color: white !important;
+}
+.nav-link:hover {
+    color: #999 !important;
+}
+
+#button-galeria {
+    width: calc(100% - 5px);
+    padding: 1.2em 0 1.2em 0;
+    background-color: #ffd500;
+    border: none;
+    margin: 0 0 1% 0;
+    box-shadow: #c09000 5px 5px 0;
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+#button-galeria:active {
+    background-color: #d0a000;
+    box-shadow: #d0a000 0 0 0;
+}
+.hidden{
+    visibility: hidden;
+}
+
+
+

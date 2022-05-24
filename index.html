@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Adonis Kebab</title>
+        <link rel="stylesheet" href="./css/style.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./js/script.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a2ee819d1b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-dark bg-dark" id="topbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./img/kebab.png" alt="small-logo" class="d-inline-block align-text-top" id="logo-small">
+                        <span class="brand-name">Adonis Kebab</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <a class="nav-link" aria-current="page" href="#">Kontakt</a>
+                    <a class="nav-link" href="#">Galeria</a>
+                    <a class="nav-link" href="#">O nas</a>
+                </nav>
+                <button type="button" class="btn btn-danger">Zamów!</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="jumbotron">
+        <div class="jumbotron-elements"></div>
+        <h1 class="brand-name-big brand-name">Adonis<br>Kebab</h1>
+        <p class="lead" style="color: #999; font-size: 2vw;">Najpiękniejszy kebab w Polsce!</p>
+        <p class="lead">
+            <a class="btn btn-danger btn-lg" href="#" role="button" id="btn-zamow">Zamów!</a>
+            <a class="btn btn-dark btn-lg" href="#" role="button" id="btn-kontakt">Kontakt</a>
+        </p>
+    </div>
+
+    <button type="button" id="button-galeria">Galeria</button>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="./img/temp.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">O nas</h5>
+                    <p class="card-text">Dowiedz się więcej o najpiękniejszym kebabie w Polsce</p>
+                    <button type="button" class="btn btn-dark" id="btn-o-nas">O nas</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="./img/temp.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Lokalizacja</h5>
+                    <p class="card-text">Tutaj nas znajdziesz</p>
+                    <a href="#" class="btn btn-primary">Lokalizacja</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="./img/temp.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Złap Kebsa!</h5>
+                    <p class="card-text">Zbieraj spadające kebaby i zdobywaj punkty w pysznej grze!</p>
+                    <a href="#" class="btn btn-success">Graj!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark">
+        <div class="row">
+            <div>Adonis Kebab &copy; Krzysztof Pedrycz 2022</div>
+            <div id="footer-icons">
+                <i class="fa-brands fa-facebook fa-xl"></i>
+                <i class="fa-brands fa-instagram fa-xl"></i>
+            </div>
+        </div>
+        <div class="row" style="justify-content: center;">
+            <div class="col-md-2">
+                <a href="">Napis</a><br>
+                <a href="">Napis</a><br>
+                <a href="">Napis</a>
+            </div>
+            <div class="col-md-2">
+                <a href="">Napis</a><br>
+                <a href="">Napis</a><br>
+                <a href="">Napis</a>
+            </div>
+            <div class="col-md-2">
+                <a href="">Napis</a><br>
+                <a href="">Napis</a><br>
+                <a href="">Napis</a>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>
