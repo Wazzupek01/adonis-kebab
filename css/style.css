@@ -1,3 +1,8 @@
+/* basic html5 elements */
+
+body {
+    overflow-x: hidden;
+}
 
 footer {
     min-height: 100px;
@@ -5,52 +10,28 @@ footer {
     color: #FFF;
     text-align: center;
 }
-body {
-    overflow-x: hidden;
+
+hr {
+    margin: 0 auto 5vh auto !important;
+}
+canvas {
+    display: block;
+    margin: 100px auto 100px auto;
+    border: 1px solid black;
 }
 
+/* brand name styling */
 .brand-name {
     font-family: "Times New Roman", serif;
 }
 
-.jumbotron {
-    background: url("../img/baner.png") no-repeat;
-    background-size: 100vw;
-    color: #DDD;
-    text-align: center;
-}
-
-.jumbotron a {
-    margin-bottom: 20px;
-}
-
-.jumbotron-smaller {
-    height: auto;
-}
-
-.card {
-    text-align: center;
-}
-
-#o-nas {
-    visibility: hidden;
-}
-
-#footer-icons {
-    float: right;
-}
-
-#logo-small {
+/* kebab logo styling */
+.logo-small {
     width: 1em;
     height: 1em;
 }
 
-
-.brand-name-big {
-    font-size: 15vw;
-    text-shadow: 2px 2px 15px #000;
-}
-
+/* nav */
 .nav-link {
     color: white !important;
 }
@@ -58,7 +39,30 @@ body {
     color: #999 !important;
 }
 
+
+/* jumbotron brand name */
+.brand-name-big {
+    font-size: 15vw;
+    text-shadow: 2px 2px 15px #000;
+}
+
+/* jumbotron */
+.jumbotron {
+    background: url("../img/baner.png") no-repeat;
+    background-size: 100vw;
+    color: #DDD;
+    text-align: center;
+}
+
+/* jumbotron elements */
+.jumbotron a {
+    margin-bottom: 20px;
+}
+
+/* gallery button */
 #button-gallery {
+    display: block;
+    text-align: center;
     width: calc(100% - 5px);
     padding: 1.2em 0 1.2em 0;
     background-color: #ffd500;
@@ -66,12 +70,80 @@ body {
     margin: 0 0 1% 0;
     box-shadow: #c09000 5px 5px 0;
     transition: transform 200ms, box-shadow 200ms;
+    text-decoration: none;
+    color: #333;
 }
 
 #button-gallery:active {
     background-color: #d0a000;
     box-shadow: #d0a000 0 0 0;
 }
+
+/* individual page elements */
+
+/* index */
+.card {
+    text-align: center;
+}
+
+#footer-icons {
+    float: right;
+    margin-bottom: 2vh;
+}
+
+/* order form */
+.item { /* element displayed in list of products */
+    width: 100vw;
+    padding-left: 5%;
+    border-bottom: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item:last-child {
+    border: none;
+}
+
+.item img {
+    height: 100px;
+}
+.item input[type="checkbox"] {
+    float: right;
+    margin-right: 10%;
+}
+
+#submit {
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* gallery */
+#gallery {
+    width: 90vw;
+    margin: 4vh auto 7vh auto;
+}
+
+/* contact */
+#contact {
+    width: 40vw;
+    margin: 4vh auto 7vh auto;
+    text-align: center;
+}
+
+#contact img {
+    height: 1em;
+}
+
+.weatherwidget-io {
+    max-width: 695px;
+    margin: auto;
+}
+/* classes for JS usage */
 .hidden{
     display: none;
 }
@@ -80,15 +152,7 @@ body {
     display: block;
 }
 
-.item {
-    width: 100vw;
-    height: 50px;
-    padding-left: 5%;
-    border-bottom: 1px solid #000;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
+
 
 
 

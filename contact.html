@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Adonis Kebab</title>
+        <link rel="stylesheet" href="./css/style.css" type="text/css">
+        <link rel="stylesheet" href="./css/lightbox.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/lightbox.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a2ee819d1b.js" crossorigin="anonymous"></script>
+        <script src="https://maps.google.com/maps/api/js?key=AIzaSyD41NLJ3vzn6Z9fVqknhuwjwRJMcG-BzxU" ></script>
+    </head>
+    <body>
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./img/kebab.png" alt="small-logo" class="d-inline-block align-text-top logo-small">
+                    <span class="brand-name">Adonis Kebab</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="contact.html">Kontakt</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">O nas</a></li>
+                    </ul>
+                    <a type="button" href="index.html#order" class="btn btn-danger btn-order" id="#btn-order">Zamów!</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div id="contact">
+        <h1>Kontakt</h1>
+        <h2>Skontaktuj się z nami i zamów najpiękniejszego kebaba w Polsce przez telefon!</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./img/kebab.png" alt="kebab"> AdonisKebab<br>
+                <i class="fa fa-map-location-dot"></i> 26-008 Bęczków<br>
+                <i class="fa fa-map-location-dot"></i> ul. Jana Pawła II 8<br>
+                <i class="fa-solid fa-phone"></i> 694202137<br>
+                <br><br>
+                <h2>Nie chcesz z nami rozmawiać?<br>Napisz Maila!</h2>
+                <i class="fa-solid fa-envelope-circle-check"></i> kontakt@adoniskebab.pl <br><br>
+            </div>
+            <div class="col-md-6">
+                <div id="map" style="width:350px; height:250px;">
+                </div>
+            </div>
+        </div>
+        <h1>Zawsze jest pogoda na kebaba!</h1>
+        <a class="weatherwidget-io" href="https://forecast7.com/pl/50d8820d80/beczkow/" data-label_1="BĘCZKÓW"
+            data-label_2="Pogoda" data-icons="Climacons Animated" data-theme="weather_one" >BĘCZKÓW Pogoda</a>
+        <script>
+            !function(d,s,id){
+                let js,fjs=d.getElementsByTagName(s)[0];
+                if(!d.getElementById(id)){
+                    js=d.createElement(s);
+                    js.id=id;
+                    js.src='https://weatherwidget.io/js/widget.min.js';
+                    fjs.parentNode.insertBefore(js,fjs);}}
+            (document,'script','weatherwidget-io-js');
+        </script>
+    </div>
+
+
+    <footer class="bg-dark">
+        <div class="row">
+            <div>Adonis Kebab &copy; Krzysztof Pedrycz 2022</div>
+            <div id="footer-icons">
+                <i class="fa-brands fa-facebook fa-xl"></i>
+                <i class="fa-brands fa-instagram fa-xl"></i>
+            </div>
+        </div>
+        <div class="row" style="justify-content: center;">
+            <div class="col-md-2">
+                <a href="contact.html">Kontakt</a><br>
+                <a href="gallery.html">Galeria</a><br>
+            </div>
+            <div class="col-md-2">
+                <a href="about.html">O nas</a><br>
+                <a href="">Lokalizacja</a><br>
+            </div>
+            <div class="col-md-2">
+                <a href="game.html">Gra</a><br>
+                <a href="index.html#order" class="btn-order">Zamów</a><br>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>

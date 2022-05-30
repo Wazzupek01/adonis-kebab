@@ -12,11 +12,26 @@ $(function () {
         }
     });
 
-    $("#btn-order").click(function() {
+    $(".btn-order").click(function() {
         let order = $("#order");
         if(order.is(":empty")) {
             for (let i = 0; i < 10; i++)
-                order.append(`<div class='item'> pozycja ${i+1} <input type='checkbox'><span class='item-checkbox'></span></div>`);
+                order.append(`<div class='item'><div><img src="../img/kebab.png" alt="produkt ${i+1}">
+                                kebab ${i+1}</div> <input type='checkbox' name="kebab ${i+1}"></div>`);
+            order.append(`<div id="submit"><input type="submit" value="Do koszyka" class="btn btn-danger" /></div>`)
+        } else {
+            order.empty();
         }
     });
+/*
+    let coordinates = new google.maps.LatLng(53.419,14.581);
+    let mapParameters = {
+        zoom: 10,
+        center: coordinates,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    let map = new google.maps.Map(document.getElementById("map"),
+        mapParameters);
+*/
 })
+
