@@ -16,7 +16,7 @@ hr {
 }
 canvas {
     display: block;
-    margin: 100px auto 100px auto;
+    margin: 50px auto 100px auto;
     border: 1px solid black;
 }
 
@@ -143,6 +143,14 @@ canvas {
     max-width: 695px;
     margin: auto;
 }
+
+/* game */
+#title {
+    width: 50vw;
+    margin: 50px auto 10px auto;
+    text-align: center;
+}
+
 /* classes for JS usage */
 .hidden{
     display: none;

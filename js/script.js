@@ -23,15 +23,5 @@ $(function () {
             order.empty();
         }
     });
-/*
-    let coordinates = new google.maps.LatLng(53.419,14.581);
-    let mapParameters = {
-        zoom: 10,
-        center: coordinates,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    let map = new google.maps.Map(document.getElementById("map"),
-        mapParameters);
-*/
 })
 
