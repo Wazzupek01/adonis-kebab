@@ -28,7 +28,15 @@
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Galeria</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">O nas</a></li>
                     </ul>
-                    <a type="button" href="#order" class="btn btn-danger btn-order" id="#btn-order">Zamów!</a>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-bs-toggle="dropdown" aria-expanded="false" id="basket-button">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                        <ul class="dropdown-menu basket">
+                            <li id="empty">Koszyk jest pusty</li>
+                        </ul>
+                    </div>
+                    <a type="button" href="#order" class="btn btn-danger btn-order">Zamów!</a>
                 </div>
             </div>
         </nav>
@@ -40,14 +48,37 @@
         <h1 class="brand-name-big brand-name">Adonis<br>Kebab</h1>
         <p class="lead" style="color: #999; font-size: 2vw;">Najpiękniejszy kebab w Polsce!</p>
         <p class="lead">
-            <a class="btn btn-danger btn-lg btn-order" href="#order" role="button">Zamów!</a>
+            <a class="btn btn-danger btn-lg btn-order" href="#order" role="button" id="btn-order">Zamów!</a>
             <a class="btn btn-dark btn-lg" href="contact.html" role="button" id="btn-contact">Kontakt</a>
         </p>
     </div>
 
 
-    <form id="order"></form>
+    <form id="order">
 
+    </form>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title" id="offcanvasExampleLabel">Koszyk</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <ul class="basket"></ul>
+            </div>
+            <form>
+                <label for="name">Imię: </label><br><input type="text" id="name"><br>
+                <label for="surname">Nazwisko: </label><br><input type="text" id="surname"><br>
+                <label for="email">Email: </label><br><input type="email" id="email"><br>
+                <label for="phone">Telefon: </label><br><input type="tel" id="phone"><br>
+                <label for="street">Ulica i numer: </label><br><input type="text" id="street"><br>
+                <label for="postnumber">Kod pocztowy: </label><br><input type="text" id="postnumber"><br>
+                <label for="city">Miasto: </label><br><input type="text" id="city"><br><br>
+                <button type="submit" class="btn btn-warning" id="place-order">Złóż zamówienie!</button>
+            </form>
+        </div>
+    </div>
 
     <a href ="gallery.html" id="button-gallery">Galeria</a>
 
@@ -55,17 +86,7 @@
     <div class="row">
         <div class="col-md-4">
             <div class="card">
-                <img class="card-img-top" src="./img/temp.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">O nas</h5>
-                    <p class="card-text">Dowiedz się więcej o najpiękniejszym kebabie w Polsce</p>
-                    <a href="about.html" class="btn btn-dark" id="btn-o-nas">O nas</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img class="card-img-top" src="./img/temp.jpg" alt="Card image cap">
+                <img class="card-img-top" src="./img/localization.jpeg" alt="Lokalizacja">
                 <div class="card-body">
                     <h5 class="card-title">Lokalizacja</h5>
                     <p class="card-text">Tutaj nas znajdziesz</p>
@@ -75,7 +96,17 @@
         </div>
         <div class="col-md-4">
             <div class="card">
-                <img class="card-img-top" src="./img/temp.jpg" alt="Card image cap">
+                <img class="card-img-top" src="./img/gallery/photo5.jpg" alt="O nas">
+                <div class="card-body">
+                    <h5 class="card-title">O nas</h5>
+                    <p class="card-text">Dowiedz się więcej o najpiękniejszym kebabie w Polsce</p>
+                    <a href="about.html" class="btn btn-dark" id="btn-o-nas">O nas</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="./img/game.png" alt="Gra">
                 <div class="card-body">
                     <h5 class="card-title">Złap Kebsa!</h5>
                     <p class="card-text">Zbieraj spadające kebaby i zdobywaj punkty w pysznej grze!</p>

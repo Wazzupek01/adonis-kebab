@@ -91,6 +91,12 @@ canvas {
     margin-bottom: 2vh;
 }
 
+#basket-button {
+    margin-right: 10px;
+}
+.dropdown-menu li {
+    padding-left: 10px;
+}
 /* order form */
 .item { /* element displayed in list of products */
     width: 100vw;
@@ -111,7 +117,7 @@ canvas {
     height: 100px;
 }
 .item input[type="checkbox"] {
-    float: right;
+    justify-content: right;
     margin-right: 10%;
 }
 
@@ -137,11 +143,6 @@ canvas {
 
 #contact img {
     height: 1em;
-}
-
-.weatherwidget-io {
-    max-width: 695px;
-    margin: auto;
 }
 
 /* game */

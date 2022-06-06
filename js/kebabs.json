@@ -1,0 +1,34 @@
+{
+  "kebabs": [
+    {
+      "kebabID": 0,
+      "kebabName": "Pita studencka",
+      "price": 10
+    },
+    {
+      "kebabID": 1,
+      "kebabName": "Mała Pita",
+      "price": 12
+    },
+    {
+      "kebabID": 2,
+      "kebabName": "Średnia Pita",
+      "price": 16
+    },
+    {
+      "kebabID": 3,
+      "kebabName": "Duża Pita",
+      "price": 20
+    },
+    {
+      "kebabID": 4,
+      "kebabName": "Pita XL",
+      "price": 24
+    },
+    {
+      "kebabID": 5,
+      "kebabName": "Kebab na talerzu",
+      "price": 19
+    }
+  ]
+}
