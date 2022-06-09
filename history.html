@@ -7,9 +7,8 @@
         <title>Adonis Kebab</title>
         <link rel="icon" href="./img/kebab.png">
         <link rel="stylesheet" href="./css/style.css" type="text/css">
-        <link rel="stylesheet" href="./css/lightbox.css" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="./js/lightbox.js"></script>
+        <script src="./js/history.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
                 integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -42,41 +41,16 @@
     </header>
 
 
-    <main id="gallery">
-        <h1 class="text-center"> Galeria </h1>
-        <hr class="w-25 border-dark">
-        <div class="row">
-            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                <a href="./img/gallery/photo1.jpg" data-lightbox="gallery" data-title="Mohamed przy pracy">
-                <img src="./img/gallery/photo1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt=""/>
-                </a>
-                <a href="./img/gallery/photo2.jpg" data-lightbox="gallery" data-title="kurczak się kręci">
-                    <img src="./img/gallery/photo2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt=""/>
-                </a>
+    <main>
+        <div id="history">
+        <h1>Historia zamówień</h1>
+            <div>
+                <label for="order-number">wybierz numer zamówienia</label>
+                <select name="order-number" id="order-number"></select>
+                <button type="button" id="delete-order" class="btn btn-dark btn-sm">usuń zamówienie</button>
+                <button type="button" id="delete-history" class="btn btn-danger btn-sm">usuń historię</button>
             </div>
-
-            <div class="col-lg-4 mb-4 mb-lg-0">
-                <a href="./img/gallery/photo3.jpg" data-lightbox="gallery" data-title="najpiękniejszy kebab w Polsce">
-                    <img src="./img/gallery/photo3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt=""/>
-                </a>
-
-                <a href="./img/gallery/photo4.jpg" data-lightbox="gallery" data-title="kurczak na dworze">
-                    <img src="./img/gallery/photo4.jpg" class="w-100 shadow-1-strong rounded mb-4" alt=""/>
-                </a>
-            </div>
-
-            <div class="col-lg-4 mb-4 mb-lg-0">
-                <a href="./img/gallery/photo5.jpg" data-lightbox="gallery" data-title="Mahdi szykuje się do otwarcia">
-                    <img src="./img/gallery/photo5.jpg" class="w-100 shadow-1-strong rounded mb-4" alt=""/>
-                </a>
-
-                <a href="./img/gallery/photo6.jpg" data-lightbox="gallery" data-title="Młody Ahmed i jego pierwsze rollo">
-                    <img src="./img/gallery/photo6.jpg" class="w-100 shadow-1-strong rounded mb-4" alt=""/>
-                </a>
-                <a href="./img/gallery/photo7.jpg" data-lightbox="gallery" data-title="Piękne miasto">
-                    <img src="./img/gallery/photo7.jpg" class="w-100 shadow-1-strong rounded mb-4" alt=""/>
-                </a>
-            </div>
+            <table></table>
         </div>
     </main>
 

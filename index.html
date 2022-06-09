@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Adonis Kebab</title>
+        <link rel="icon" href="./img/kebab.png">
         <link rel="stylesheet" href="./css/style.css" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="./js/script.js"></script>
@@ -14,7 +15,7 @@
     </head>
     <body>
 
-    <header class="sticky-top">
+    <header class="fixed-top">
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container px-5">
                 <a class="navbar-brand" href="./index.html">
@@ -43,7 +44,7 @@
     </header>
 
 
-    <div class="jumbotron">
+    <main class="jumbotron">
         <div class="jumbotron-elements"></div>
         <h1 class="brand-name-big brand-name">Adonis<br>Kebab</h1>
         <p class="lead" style="color: #999; font-size: 2vw;">Najpiękniejszy kebab w Polsce!</p>
@@ -51,14 +52,14 @@
             <a class="btn btn-danger btn-lg btn-order" href="#order" role="button" id="btn-order">Zamów!</a>
             <a class="btn btn-dark btn-lg" href="contact.html" role="button" id="btn-contact">Kontakt</a>
         </p>
-    </div>
+    </main>
 
 
     <form id="order">
 
     </form>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <aside class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
             <h3 class="offcanvas-title" id="offcanvasExampleLabel">Koszyk</h3>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -67,18 +68,22 @@
             <div>
                 <ul class="basket"></ul>
             </div>
-            <form>
+            <form id="order-form">
                 <label for="name">Imię: </label><br><input type="text" id="name"><br>
                 <label for="surname">Nazwisko: </label><br><input type="text" id="surname"><br>
-                <label for="email">Email: </label><br><input type="email" id="email"><br>
-                <label for="phone">Telefon: </label><br><input type="tel" id="phone"><br>
-                <label for="street">Ulica i numer: </label><br><input type="text" id="street"><br>
-                <label for="postnumber">Kod pocztowy: </label><br><input type="text" id="postnumber"><br>
-                <label for="city">Miasto: </label><br><input type="text" id="city"><br><br>
-                <button type="submit" class="btn btn-warning" id="place-order">Złóż zamówienie!</button>
+                <label for="email">Email: </label><br><input type="email" id="email" placeholder="np. xyz@email.com"><br>
+                <label for="phone">Telefon: </label><br><input type="tel" id="phone" placeholder="np. 694202137"><br>
+                <label for="street">Ulica: </label><br><input type="text" id="street" placeholder="np. Jana Pawła II"><br>
+                <label for="postnumber">Kod pocztowy: </label><br><input type="text" id="postnumber" placeholder="12-345"><br>
+                <label for="city">Miasto: </label><br><input type="text" id="city" placeholder="Bęczków"><br>
+                Metoda płatności:<br>
+                <input type="radio" id="blik" name="payment" value="blik" checked><label for="blik">&nbsp;blik &nbsp;</label>
+                <input type="radio" id="karta" name="payment" value="karta"><label for="karta">&nbsp;karta płatnicza &nbsp;</label>
+                <input type="radio" id="at-delivery" name="payment" value="przy dostawie"><label for="at-delivery">&nbsp;przy dobiorze &nbsp;</label>
+                <button type="button" class="btn btn-warning" id="place-order">Złóż zamówienie!</button>
             </form>
         </div>
-    </div>
+    </aside>
 
     <a href ="gallery.html" id="button-gallery">Galeria</a>
 
@@ -88,9 +93,9 @@
             <div class="card">
                 <img class="card-img-top" src="./img/localization.jpeg" alt="Lokalizacja">
                 <div class="card-body">
-                    <h5 class="card-title">Lokalizacja</h5>
-                    <p class="card-text">Tutaj nas znajdziesz</p>
-                    <a href="https://goo.gl/maps/axGgyQ5cE1YBnoAM9" class="btn btn-primary">Lokalizacja</a>
+                    <h5 class="card-title">Kontakt i lokalizacja</h5>
+                    <p class="card-text">Tutaj nas znajdziesz nasze dane kontaktowe i dokładną mapę jak do nas dotrzeć!</p>
+                    <a href="https://goo.gl/maps/axGgyQ5cE1YBnoAM9" class="btn btn-primary">Kontakt</a>
                 </div>
             </div>
         </div>
@@ -132,7 +137,7 @@
             </div>
             <div class="col-md-2">
                 <a href="about.html">O nas</a><br>
-                <a href="">Lokalizacja</a><br>
+                <a href="history.html">Historia zamówień</a><br>
             </div>
             <div class="col-md-2">
                 <a href="game.html">Gra</a><br>

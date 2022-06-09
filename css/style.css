@@ -1,5 +1,10 @@
 /* basic html5 elements */
 
+nav {
+    opacity: 0.8;
+
+}
+
 body {
     overflow-x: hidden;
 }
@@ -128,6 +133,11 @@ canvas {
     align-items: center;
 }
 
+.wrong-input {
+    border: 2px solid #fa6b6b;
+    border-radius: 3px;
+}
+
 /* gallery */
 #gallery {
     width: 90vw;
@@ -143,6 +153,20 @@ canvas {
 
 #contact img {
     height: 1em;
+}
+/* history */
+#history{
+    margin: auto;
+    text-align: center;
+    width: 70vw;
+}
+#history div {
+    margin-bottom: 2vh;
+}
+
+#history td{
+    border: 1px solid black;
+    min-width: 50px;
 }
 
 /* game */

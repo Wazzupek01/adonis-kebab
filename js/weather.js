@@ -17,15 +17,14 @@ $(function () {
         .catch(error => console.log('error', error));
 
     function time() {
-        fetch("http://worldtimeapi.org/api/timezone/Europe/Warsaw", requestOptions)
+        fetch("https://worldtimeapi.org/api/timezone/Europe/Warsaw", requestOptions)
             .then(response => response.json())
             .then(result => {
-                let time = new Date();
-                time = result.datetime.substr(11,8)
+                let time = result.datetime.substr(11,8)
                 document.getElementById("time").innerHTML = "<br>Aktualny czas w Bęczkowie: " + time;
             })
             .catch(error => console.log('error', error));
-        let t = setTimeout(function(){time()}, 1000);
+        setTimeout(function(){time()}, 1000);
     }
     time();
 });
